@@ -1,0 +1,49 @@
+==================================================
+    UCI HEART DISEASE MODEL EVALUATION METRICS
+    ==================================================
+    
+    1. MODEL & DATASET INFORMATION
+    --------------------------------------------------
+    Model File       : ./models/final_model.pkl
+    Dataset Evaluated: ./data/processed.cleveland.data
+    Total Dateset Samples: 297
+    Total Training Samples: 237
+    Total Testing Samples: 60
+    Total Features (13): ['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+    Feature Selected (8): ['thal', 'ca', 'cp', 'oldpeak', 'thalach', 'slope', 'exang', 'sex']
+    
+    2. OVERALL PERFORMANCE METRICS
+    --------------------------------------------------
+    Accuracy         : 0.8667 (86.67%)
+    Precision        : 0.8846
+    Recall (Sensitivity): 0.8214
+    F1-Score         : 0.8519
+    ROC-AUC Score    : 0.9542
+    
+    3. CONFUSION MATRIX
+    --------------------------------------------------
+    [[ True Negatives (TN)   False Positives (FP) ]
+     [ False Negatives (FN)  True Positives (TP)  ]]
+    
+    [[29  3]
+ [ 5 23]]
+    
+    Detailed Counts:
+    - True Negatives  (TN) : 29
+    - False Positives (FP) : 3
+    - False Negatives (FN) : 5
+    - True Positives  (TP) : 23
+    
+    4. CLASSIFICATION REPORT
+    --------------------------------------------------
+                  precision    recall  f1-score   support
+
+ Healthy (0)       0.85      0.91      0.88        32
+Disease (1+)       0.88      0.82      0.85        28
+
+    accuracy                           0.87        60
+   macro avg       0.87      0.86      0.87        60
+weighted avg       0.87      0.87      0.87        60
+
+    ==================================================
+    
