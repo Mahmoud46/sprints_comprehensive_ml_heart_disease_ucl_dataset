@@ -66,7 +66,7 @@ def final_model_evaluation_roc_curve_cm_graphs(y, y_pred, y_prob):
     axes[1].legend(loc="lower right", fontsize=10)
 
     plt.tight_layout()
-    plt.savefig(f"{FINAL_MODEL_EVALUATION_GRAPHS_DIR}/best_model_roc_curve_cm_evaluation_graphs.png", dpi=300, bbox_inches="tight")
+    plt.savefig(f"{FINAL_MODEL_EVALUATION_GRAPHS_DIR}/final_model_roc_curve_cm_evaluation_graphs.png", dpi=300, bbox_inches="tight")
     plt.close()
 
     print(f"✅ Plots saved successfully to '{FINAL_MODEL_EVALUATION_GRAPHS_DIR}/best_model_roc_curve_cm_evaluation_graphs.png'")
