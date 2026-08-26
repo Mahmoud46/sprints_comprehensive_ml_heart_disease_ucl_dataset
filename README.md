@@ -139,6 +139,38 @@ The system operates across three core functional pipelines:
 
 ![Interactive Dataset Trends tap](./screenshots/inter_dataset_tren.png)
 
+## 📁 File Architecture
+
+```bash
+├── config/
+│   ├── paths.py
+│   └── analysis_settings.py
+├── data/
+│   └── processed.cleveland.data
+├── analysis/
+│   ├── analysis.py
+│   ├── data_preprocessing.py
+│   ├── pca_analysis.py
+│   ├── feature_selection.py
+│   ├── supervised_learning.py
+│   ├── unsupervised_learning.py
+│   └── hyperparameter_tuning.py
+├── libs/
+│   ├── utils.py                # Contains eda function to save EDA graphs
+│   ├── evaluate_and_compare_models.py # Save evaluation graphs ROC curve and cm of supervised learning models in comparison
+│   └── evaluate_model.py       # Evaluate the final model and save it as text file and plots
+├── models/
+│   └── final_model.pkl
+├── results/
+│   └── evaluation_metrics.txt  # Evaluation report of the final model
+├── ui/
+│   └── app.py                  # Dual-tab Streamlit dashboard
+├── screenshots/
+├── requirements.txt
+├── _test.py                    # Testing the model manually with feature seleced data vector
+└── README.md                   # Project overview & quickstart guide
+```
+
 ## Setup & Execution Guide
 
 ### Installation
