@@ -128,6 +128,17 @@ The system operates across three core functional pipelines:
 
 3. **Model Validation & Reporting Engine (`./libs/evaluate_model.py`):** Programmatically computes diagnostic performance metrics, saves formatted text reports (`./results/evaluation_metrics.txt`), and exports high-resolution evaluation figures (`./output/final_model/final_model_roc_curve_cm_evaluation_graphs.png`).
 
+## Screenshots
+
+### Real-Time Clinical Assessment tap
+
+![Healty Real-Time Clinical Assessment tap](./screenshots/healthy_rt_clin_ass.png)
+![Unhealty Real-Time Clinical Assessment tap](./screenshots/unhealthy_rt_clin_ass.png)
+
+### Interactive Dataset Trends tap
+
+![Interactive Dataset Trends tap](./screenshots/inter_dataset_tren.png)
+
 ## Setup & Execution Guide
 
 ### Installation
