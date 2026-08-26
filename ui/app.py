@@ -65,7 +65,7 @@ st.markdown(
 st.divider()
 
 tab1, tab2 = st.tabs(
-    ["🩺 Real-Time Clinical Assessment", "📊 Interactive Dataset Trends"]
+    ["Real-Time Clinical Assessment", "Interactive Dataset Trends"]
 )
 
 
